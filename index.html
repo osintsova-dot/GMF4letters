@@ -228,16 +228,16 @@ input:focus, textarea:focus, select:focus { border-color: #6C3FC5; }
 // UNIT DATA — GMF4
 // ════════════════════════════════════════
 var UNITS = [
-  {n:'St', label:'Starter', t:'Повторение',            m:'Сентябрь', v:'описании внешности, характера друзей и семьи, числах 100–1000',          g:'must и going to для правил и планов'},
-  {n:'1',  label:'1',       t:'Food & Cooking — Еда',  m:'Сентябрь', v:'ингредиентах и глаголах приготовления пищи',                             g:'How much / How many; исчисляемые и неисчисляемые существительные'},
-  {n:'2',  label:'2',       t:'Growing Up — Детство',  m:'Октябрь',  v:'прилагательных характера и действиях из прошлого',                       g:'Past Simple глагола to be: was / were'},
-  {n:'3',  label:'3',       t:'Prehistoric Times — Доисторическое', m:'Ноябрь',  v:'предметах и животных доисторической эпохи',           g:'Past Simple: could / couldn\'t — умения в прошлом'},
-  {n:'4',  label:'4',       t:'Space — Космос',        m:'Декабрь',  v:'объектах в космосе и прилагательных описания',                           g:'превосходной степени прилагательных: the biggest / the most...'},
-  {n:'5',  label:'5',       t:'Free Time & Music — Досуг', m:'Январь',  v:'занятиях в свободное время и музыкальных инструментах',              g:'нулевом условном предложении и конструкции I\'d rather'},
-  {n:'6',  label:'6',       t:'Machines & Materials — Машины', m:'Февраль', v:'бытовых машинах и материалах, из которых они сделаны',           g:'конструкциях be made of и be used for'},
-  {n:'7',  label:'7',       t:'Cities of the Future — Города', m:'Март',  v:'местах в городе и видах транспорта',                               g:'will / won\'t для прогнозов о будущем'},
-  {n:'8',  label:'8',       t:'Jobs & Work — Профессии', m:'Апрель',  v:'профессиях и местах работы',                                           g:'have to для обязанностей: What do you have to do?'},
-  {n:'9',  label:'9',       t:'Travel & Countries — Путешествия', m:'Май', v:'названиях стран и видах активностей на отдыхе',                   g:'Present Perfect: Have you ever...? / I\'ve been to...'},
+  {n:'St', label:'Starter', t:'Luke! — Знакомство с героем и повторение', m:'Сентябрь', v:'рассказе о человеке: имя, возраст, профессия, увлечения, внешность + числах 100–1000', g:'What\'s his name? / What does he do? / What does he like doing? + must, going to'},
+  {n:'1',  label:'Unit 1',  t:'Let\'s eat! — Еда и кулинария',  m:'Сентябрь–Октябрь', v:'ингредиентах (flour, sugar, butter, jam, nuts, raisins, coconut…)', g:'Is there any (sugar)? / Are there any (nuts)? + a lot of / some / a few'},
+  {n:'2',  label:'Unit 2',  t:'What are you like? — Характер',  m:'Октябрь',  v:'прилагательных характера (tidy, confident, shy, lazy, friendly, quiet, kind…)', g:'What\'s she like? — She\'s confident and kind. / I was / wasn\'t (shy). — was / were'},
+  {n:'3',  label:'Unit 3',  t:'A long time ago — Далёкое прошлое', m:'Ноябрь',  v:'предметах древних времён (cave, spear, axe, bones, fire, tools, fossil, fur…)', g:'Were there (tools)? — Yes, there were. / Where did they live? — They lived in caves. / could / couldn\'t'},
+  {n:'4',  label:'Unit 4',  t:'Lost in space — Космос',        m:'Ноябрь–Декабрь',  v:'космосе (planets, comet, rocket, astronaut, satellite, meteorite…)', g:'превосходной степени: the (biggest) planet / the most (expensive)'},
+  {n:'5',  label:'Unit 5',  t:'Let\'s have fun! — Свободное время', m:'Январь–Февраль',  v:'занятиях на досуге (go bowling, go hiking, have a picnic, have a barbecue…)', g:'What shall we do? — Let\'s go bowling! / If it\'s sunny, we can… / I\'d rather'},
+  {n:'6',  label:'Unit 6',  t:'Marvellous machines — Машины и техника', m:'Февраль', v:'бытовой технике (washing machine, dishwasher, toaster, microwave, hoover…)', g:'A (fridge) is used for (keeping food cold). / (Boots) are made of (leather).'},
+  {n:'7',  label:'Unit 7',  t:'In the city — Город',           m:'Март',  v:'местах в городе (airport, university, bowling alley, ice rink, art gallery…)', g:'Where do you go? — I go to the (art gallery). / Will there be…? — will / won\'t'},
+  {n:'8',  label:'Unit 8',  t:'Jobs we do — Профессии',        m:'Март–Апрель',  v:'профессиях (chef, hairdresser, photographer, dentist, mechanic, vet…)', g:'Who (cooks your food)? — A chef. / Do I have to…? / a person who… / a place where…'},
+  {n:'9',  label:'Unit 9',  t:'All around the world — Страны мира', m:'Апрель–Май', v:'странах и флагах (France, Italy, India, Morocco, Japan, Brazil…)', g:'Have you ever been to (Italy)? — Yes, I have. / I\'ve been to (India). — Present Perfect'},
 ];
 
 var SL = {1:'не усвоено',2:'слабо, нужна дополнительная работа',3:'справляется с поддержкой',4:'уверенно',5:'отлично, без подсказок'};
@@ -281,7 +281,7 @@ function selUnitByIdx(i, mode, clickedBtn){
   if(clickedBtn) clickedBtn.classList.add('on');
   else document.querySelectorAll('#'+pillsId+' .pill')[i].classList.add('on');
   var u=UNITS[i];
-  document.getElementById(infoId).innerHTML='<strong>Unit '+u.label+' — '+u.t+'</strong> · '+u.m+'<br>Лексика: «'+u.v+'»<br>Грамматика: «'+u.g+'»';
+  document.getElementById(infoId).innerHTML='<strong>'+u.label+' · '+u.t+'</strong> · '+u.m+'<br>Лексика: «'+u.v+'»<br>Грамматика: «'+u.g+'»';
   if(mode==='group') GS.ui=i; else { S.ui=i; chkOne(); }
 }
 
@@ -359,7 +359,7 @@ function buildReport(name,teacher,ui,v,g,a,att,online,hw,app,ts,tt,note){
 
   return [
     '<p>Дорогие родители!</p><br>',
-    '<p>Unit '+u.label+' — <em>'+u.t+'</em> — завершён. Вот краткие итоги.</p>',
+    '<p>'+u.label+' · '+u.t+' — юнит завершён. Вот краткие итоги.</p>',
     '<p>👤 <strong>Ученик:</strong> '+name+'</p><br>',
     goodL, (goodL&&workL)?'<br>':'', workL,
     '<br>', statL, statL?'<br>':'', scaleL, '<br>',
@@ -505,7 +505,7 @@ function saveOne(){
   var idx=JSON.parse(localStorage.getItem(idxKey)||'[]');
   var entry=name+'||'+S.ui;
   if(idx.indexOf(entry)===-1){idx.push(entry);localStorage.setItem(idxKey,JSON.stringify(idx));}
-  document.getElementById('saveOneMsg').textContent='✓ Сохранено: '+name+' · Unit '+UNITS[S.ui].label;
+  document.getElementById('saveOneMsg').textContent='✓ Сохранено: '+name+' · '+UNITS[S.ui].label;
   document.getElementById('saveBtnOne').style.background='#EDE7FA';
   setTimeout(function(){document.getElementById('saveOneMsg').textContent='';document.getElementById('saveBtnOne').style.background='white';},3000);
 }
@@ -531,7 +531,7 @@ function saveGroup(){
     saved++;
   }
   var msg=document.getElementById('saveGroupMsg');
-  msg.textContent='✓ Сохранено учеников: '+saved+' · Unit '+UNITS[GS.ui].label;
+  msg.textContent='✓ Сохранено учеников: '+saved+' · '+UNITS[GS.ui].label;
   setTimeout(function(){msg.textContent='';},3000);
 }
 
@@ -590,7 +590,7 @@ function showUnitData(name,unitIdx){
   var d=JSON.parse(localStorage.getItem(key)||'null');
   if(!d){alert('Нет данных');return;}
   var u=UNITS[unitIdx];
-  var msg='Unit '+u.label+' — '+u.t+'\n'+
+  var msg=u.label+' · '+u.t+'\n'+
     'Лексика: '+d.v+'/5  Грамматика: '+d.g+'/5  Активность: '+d.a+'/5\n'+
     (d.att?'Посещаемость: '+d.att+'/8\n':'')+(d.hw?'ДЗ: '+d.hw+'%\n':'')+
     (d.ts?'Тест: '+d.ts+(d.tt?'/'+d.tt:'')+'\n':'')+(d.note?'Заметка: '+d.note+'\n':'')+
