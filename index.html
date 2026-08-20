@@ -228,16 +228,16 @@ input:focus, textarea:focus, select:focus { border-color: #6C3FC5; }
 // UNIT DATA — GMF4
 // ════════════════════════════════════════
 var UNITS = [
-  {n:'St', label:'Starter', t:'Luke! — Знакомство с героем и повторение', m:'Сентябрь', v:'рассказе о человеке: имя, возраст, профессия, увлечения, внешность + числах 100–1000', g:'What\'s his name? / What does he do? / What does he like doing? + must, going to'},
-  {n:'1',  label:'Unit 1',  t:'Let\'s eat! — Еда и кулинария',  m:'Сентябрь–Октябрь', v:'ингредиентах (flour, sugar, butter, jam, nuts, raisins, coconut…)', g:'Is there any (sugar)? / Are there any (nuts)? + a lot of / some / a few'},
-  {n:'2',  label:'Unit 2',  t:'What are you like? — Характер',  m:'Октябрь',  v:'прилагательных характера (tidy, confident, shy, lazy, friendly, quiet, kind…)', g:'What\'s she like? — She\'s confident and kind. / I was / wasn\'t (shy). — was / were'},
-  {n:'3',  label:'Unit 3',  t:'A long time ago — Далёкое прошлое', m:'Ноябрь',  v:'предметах древних времён (cave, spear, axe, bones, fire, tools, fossil, fur…)', g:'Were there (tools)? — Yes, there were. / Where did they live? — They lived in caves. / could / couldn\'t'},
-  {n:'4',  label:'Unit 4',  t:'Lost in space — Космос',        m:'Ноябрь–Декабрь',  v:'космосе (planets, comet, rocket, astronaut, satellite, meteorite…)', g:'превосходной степени: the (biggest) planet / the most (expensive)'},
-  {n:'5',  label:'Unit 5',  t:'Let\'s have fun! — Свободное время', m:'Январь–Февраль',  v:'занятиях на досуге (go bowling, go hiking, have a picnic, have a barbecue…)', g:'What shall we do? — Let\'s go bowling! / If it\'s sunny, we can… / I\'d rather'},
-  {n:'6',  label:'Unit 6',  t:'Marvellous machines — Машины и техника', m:'Февраль', v:'бытовой технике (washing machine, dishwasher, toaster, microwave, hoover…)', g:'A (fridge) is used for (keeping food cold). / (Boots) are made of (leather).'},
-  {n:'7',  label:'Unit 7',  t:'In the city — Город',           m:'Март',  v:'местах в городе (airport, university, bowling alley, ice rink, art gallery…)', g:'Where do you go? — I go to the (art gallery). / Will there be…? — will / won\'t'},
-  {n:'8',  label:'Unit 8',  t:'Jobs we do — Профессии',        m:'Март–Апрель',  v:'профессиях (chef, hairdresser, photographer, dentist, mechanic, vet…)', g:'Who (cooks your food)? — A chef. / Do I have to…? / a person who… / a place where…'},
-  {n:'9',  label:'Unit 9',  t:'All around the world — Страны мира', m:'Апрель–Май', v:'странах и флагах (France, Italy, India, Morocco, Japan, Brazil…)', g:'Have you ever been to (Italy)? — Yes, I have. / I\'ve been to (India). — Present Perfect'},
+  {n:'St', label:'Starter', t:'Luke! — Знакомство с героем и повторение', m:'Сентябрь', v:'рассказ о человеке: имя, возраст, профессия, увлечения, внешность + числа 100–1000', g:'What\'s his name? / What does he do? / What does he like doing? + must, going to'},
+  {n:'1',  label:'Unit 1',  t:'Let\'s eat! — Еда и кулинария',  m:'Сентябрь–Октябрь', v:'ингредиенты (flour, sugar, butter, jam, nuts, raisins, coconut…)', g:'Is there any (sugar)? / Are there any (nuts)? + a lot of / some / a few'},
+  {n:'2',  label:'Unit 2',  t:'What are you like? — Характер',  m:'Октябрь',  v:'прилагательные характера (tidy, confident, shy, lazy, friendly, quiet, kind…)', g:'What\'s she like? — She\'s confident and kind. / I was / wasn\'t (shy). — was / were'},
+  {n:'3',  label:'Unit 3',  t:'A long time ago — Далёкое прошлое', m:'Ноябрь',  v:'предметы древних времён (cave, spear, axe, bones, fire, tools, fossil, fur…)', g:'Were there (tools)? — Yes, there were. / Where did they live? — They lived in caves. / could / couldn\'t'},
+  {n:'4',  label:'Unit 4',  t:'Lost in space — Космос',        m:'Ноябрь–Декабрь',  v:'космос (planets, comet, rocket, astronaut, satellite, meteorite…)', g:'превосходной степени: the (biggest) planet / the most (expensive)'},
+  {n:'5',  label:'Unit 5',  t:'Let\'s have fun! — Свободное время', m:'Январь–Февраль',  v:'занятия на досуге (go bowling, go hiking, have a picnic, have a barbecue…)', g:'What shall we do? — Let\'s go bowling! / If it\'s sunny, we can… / I\'d rather'},
+  {n:'6',  label:'Unit 6',  t:'Marvellous machines — Машины и техника', m:'Февраль', v:'бытовая техника (washing machine, dishwasher, toaster, microwave, hoover…)', g:'A (fridge) is used for (keeping food cold). / (Boots) are made of (leather).'},
+  {n:'7',  label:'Unit 7',  t:'In the city — Город',           m:'Март',  v:'места в городе (airport, university, bowling alley, ice rink, art gallery…)', g:'Where do you go? — I go to the (art gallery). / Will there be…? — will / won\'t'},
+  {n:'8',  label:'Unit 8',  t:'Jobs we do — Профессии',        m:'Март–Апрель',  v:'профессии (chef, hairdresser, photographer, dentist, mechanic, vet…)', g:'Who (cooks your food)? — A chef. / Do I have to…? / a person who… / a place where…'},
+  {n:'9',  label:'Unit 9',  t:'All around the world — Страны мира', m:'Апрель–Май', v:'страны и флаги (France, Italy, India, Morocco, Japan, Brazil…)', g:'Have you ever been to (Italy)? — Yes, I have. / I\'ve been to (India). — Present Perfect'},
 ];
 
 var SL = {1:'не усвоено',2:'слабо, нужна дополнительная работа',3:'справляется с поддержкой',4:'уверенно',5:'отлично, без подсказок'};
